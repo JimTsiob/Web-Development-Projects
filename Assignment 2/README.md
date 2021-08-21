@@ -1,6 +1,6 @@
 # Library website
 
-For this project we had to create three webpages that comprised a library website. We also learned some technologies that are used in web development such as Handlebars , nodejs , Fetch API and the express framework.
+For this project we had to create three webpages that comprised a library website. We also learned some technologies that are used in web development such as Handlebars , nodejs , Fetch API and the express framework. Finally , we learned how to connect the website with an external database.
 
 ## First webpage (index.html)
 the first webpage hosts the search bar , a menu to navigate through the other webpages and the button for searching
