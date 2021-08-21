@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "css/styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+        <!-- <script src="js/handlebars-v4.7.7.js"> </script> -->
+        <title>
+            Main page
+        </title>
+    </head>
+    <body>
+        <h1>
+            Book Search 
+            </h1>
+            <div class = "navbar">
+                <a href = "index.html"> Book Search </a>
+                <a href = "manageFavBooks.html"> Manage Favorite Books </a>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <input type = text placeholder="Search a book..." id = "input">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <button id = "searchButton" type = "submit" onclick = "searchForBook()"> Search </button>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            <div id = "books"> </div>  
+            <br>
+            <br>
+            <br>
+
+            <!-- Handlebars template below -->
+            <script id = "book-details-template" type = "text/x-handlebars-template">
+                    <ul>
+                        {{#each book}}
+                        <li> title :  {{title}} </li>
+                        <li> sub title (description) : {{subTitle}} </li>
+                        <li> author : {{author}} &nbsp;&nbsp;&nbsp;&nbsp; <button id = "saveButton" value = {{id}} onclick = "saveBook(value);createUndo();" type = "submit"> Save </button> </li>
+                        <li> ID : {{id}} <div id = "undoButton"> </div> </li> 
+                        <br>
+                        {{/each}}
+                    </ul>
+            </script>
+            <script src = "js/main.js"></script>
+            <script src = "js/favBooks.js"></script>
+        </body>
+        <footer>
+            Copyright (C) 2021 All Rights reserved by Dimitrios Tsiompikas
+        </footer>
+</html>

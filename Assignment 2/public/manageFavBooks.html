@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "stylesheet" href = "css/styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+        <title>
+            Save Books page
+        </title>
+    </head>
+    <body>
+        <h1> 
+            Manage your favorite books!
+        </h1>
+        <div class = "navbar">
+            <a href = "index.html"> Book Search </a>
+            <a href = "manageFavBooks.html"> Manage Favorite Books </a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <input type = text placeholder="Search a book..." onkeyup="filterDelay()" id = "input">
+        <br><br><br><br><br><br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <fieldset>
+            <h2 style = "text-align: center;"> Books List </h2>
+            <div id = "savedBooks"> </div>
+        </fieldset>
+        <br>
+        <br>
+        <br>
+        <footer>
+            Copyright (C) 2021 All Rights reserved by Dimitrios Tsiompikas
+        </footer>
+        <script id = "saved-book-details-template" type = "text/x-handlebars-template"> 
+            <ul id = "bookUL">
+                {{#each book}}
+                <li> title :  {{title}} </li>
+                <!-- anakateythinsh sth selida epexergasias vivliwn. -->
+                <li> author : {{author}} &nbsp;&nbsp;&nbsp;&nbsp; <button id = "editButton" value = {{id}} onclick="setId(value);location.href = 'editBook.html';" type = "submit"> Edit </button> </li>
+                <li> ID : {{id}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button id = "deleteButton" value = {{id}} type = "submit" onclick = "deleteBook(value);deployList();" > Delete </button> </li>
+                <li> Review : {{review}} </li>
+                <br> 
+                {{/each}}
+            </ul>
+        </script>
+        <script src = "js/main.js"></script>
+        <script src = "js/favBooks.js"></script>
+        <script src = "js/editBooks.js"></script>
+    </body>
+</html>

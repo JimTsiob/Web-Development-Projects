@@ -1,0 +1,67 @@
+h1{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav{
+    text-align: center;
+
+}
+
+h2{
+    margin-left: 500px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+p{
+    margin-left: 100px;
+    font-size: large;
+}
+
+/* Dhmiourgia flexbox */
+
+.flex-container{
+    display: flex;
+    background-color: chocolate;
+}
+
+.flex-container > div{
+    background-color: yellow;
+    margin : 20px;
+    padding: 15px;
+    font-size : 20px;
+    text-align: left;
+}
+
+/* Dhmiourgia Grid */
+
+.grid-container{
+    display : grid;
+    grid-column: 1/2;
+    background-color: deepskyblue;
+    padding : 10px;
+}
+
+.grid-container > div{
+    background-color: blueviolet;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Xrhsh @font-face */
+
+@font-face{
+    font-family : 'hattoriHanzo';
+    src:url(Hattori_Hanzo.otf);
+}
+
+footer{
+    font-family: 'hattoriHanzo';
+}
+
+a:hover{
+    color :red;
+}
+

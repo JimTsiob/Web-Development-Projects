@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "css/styles.css">
+        <title> Edit Books page </title>
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    </head>
+    <body>
+        <h1> Edit your books here </h1>
+            <button type = "submit" id = "backButton" onclick="location.href = 'manageFavBooks.html';"> Back to favorites </button>
+            <br><br>
+            <input type = "text" id = "titleIn" placeholder = "Enter new title here..">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <input type = "text" id = "authorIn" placeholder = "Enter new author here..">
+            <br><br><br><br><br><br><br><br>
+            <textarea id = "txarea" maxlength="5000" placeholder="Leave a review here if you want.. (5000 characters max)" rows = 15 cols = 50> </textarea>
+            <br><br><br><br><br><br>
+            <button type = "submit" id = "subButton" onclick = "editBook(); location.href = 'manageFavBooks.html';"> Submit </button>
+            <br>
+        <script src = "js/editBooks.js"> </script>
+    </body>
+    <footer>
+        Copyright (C) 2021 All Rights reserved by Dimitrios Tsiompikas
+    </footer>
+</html>

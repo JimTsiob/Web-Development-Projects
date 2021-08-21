@@ -1,0 +1,340 @@
+.navbar{
+    overflow : hidden;
+    background-color: whitesmoke;
+    padding : 10px;
+    border-radius: 25px;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+h1{
+    font-size: x-large;
+    padding : 15px;
+    color : white;
+    text-align: center;   
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+
+body{
+    background-color:brown;
+    width : 100%;
+    height : 500px;
+}
+
+.navbar a{
+    float : left;
+    border-radius: 25px;
+    display : block;
+    color : red;
+    text-align: center;
+    padding : 10px 15px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-left: 400px;
+}
+
+.navbar a:hover{
+    background-color: yellow;
+    color : black;
+}
+
+.navbar a.active{
+    background-color: cornsilk;
+    color: white;
+}
+
+.navbar .icon{
+    display: none;
+}
+
+
+input[type = text]{
+    float :right;
+    display : block;
+    text-align: left;
+    padding : 20px;
+    margin-right: 600px;
+    width: 700px;
+    font-size: x-large;
+}
+
+#searchButton{ /* Search button */
+    float : left;
+    color:white;
+    padding : 20px;
+    background-color: black;
+    margin-left: 800px;
+    width : 300px;
+    font-size: x-large;
+    border-radius: 20px;
+}
+
+#searchButton:hover{
+    background-color: gold;
+    color : black;
+}
+
+#saveButton{ /* button for saving books */
+    float : center;
+    color : white;
+    padding : 8px;
+    background-color: blue;
+    border-radius: 25px;
+    width : 100px;
+}
+
+#backButton{
+    color: white;
+    padding: 10px;
+    background-color: coral;
+    font-size: large;
+}
+
+#undoBut{
+    color : whitesmoke;
+    padding: 6px;
+    background-color: darkorchid;
+    font-size: large;
+    margin-left : 700px;
+    border-radius: 25px;
+}
+
+#editButton{
+    color:dodgerblue;
+    padding : 8px;
+    background-color: gold;
+    border-radius: 25px;
+    width : 75px;
+    font-size: large;
+}
+
+#deleteButton{
+    color:whitesmoke;
+    padding : 6px;
+    background-color: red;
+    border-radius: 20px;
+    width: 75px;
+    font-size: large;
+}
+
+::placeholder{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+}
+
+footer{
+    font-size: x-large;
+    margin-left: 700px;
+    color:greenyellow;
+}
+
+ul{
+    margin-left: 700px;
+    font-size: x-large;
+    color :deepskyblue;
+}
+
+
+.bookContainer{ /* ena pinakaki gia na krataei ta vivlia.*/
+    display : block;
+    border-radius: 25px;
+    border-style: solid;
+    background-color: aquamarine;
+    padding : 15px;
+    border-color: black;
+    text-align: center;
+    width : 700px;
+    margin-left: 550px;
+}
+
+
+/* allages tou title input button gia thn edit book page*/
+#titleIn{
+    border-radius: 25px;
+
+}
+
+#authorIn{
+    border-radius: 25px;
+}
+
+textarea{
+    margin-left: 650px;
+    font-size: x-large;
+}
+
+#subButton{
+    width: 300px;
+    margin-left: 900px;
+    padding : 15px;
+    font-size: larger;
+    background-color:mediumslateblue;
+    font-family:cursive;
+    border-radius: 20px;
+}
+
+fieldset{
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+
+legend{
+    padding: 10px;
+    width : 10px;
+    text-align: center;
+    font-size: x-large;
+    margin-left: 900px;
+}
+/* mobile phone responsive design */
+
+@media only screen and (max-width : 480px){
+    .navbar{
+        overflow : hidden;
+        background-color: whitesmoke;
+        padding : 100px;
+        border-radius: 25px;
+        margin-left: 75px;
+    }
+
+    .navbar a{
+        border-radius: 25px;
+        display : block;
+        color : red;
+        text-align: left;
+        padding : 20px;
+        text-decoration: none;
+        font-size: 30px;
+        margin-left: -70px;
+    }
+    
+    input[type = text]{
+        display : block;
+        text-align: left;
+        padding : 20px;
+        width : 200px;
+        font-size: large;
+        margin-right : 90px;
+    }
+
+    #searchButton{ /* Search button */
+        float : left;
+        color:white;
+        padding : 20px;
+        background-color: black;
+        margin-left: 100px;
+        width : 200px;
+        font-size: x-large;
+        border-radius: 20px;
+    }
+
+    footer{
+        font-size: large;
+        margin-left: 200px;
+        color:greenyellow;
+    }
+
+    ::placeholder{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: large;
+    }
+
+    ul{
+        margin-left: 50px;
+        font-size: large;
+        color :deepskyblue;
+    }
+
+    #saveButton{ /* button for saving books */
+        float : right;
+        color : white;
+        padding : 8px;
+        background-color: blue;
+        border-radius: 25px;
+        width : 100px;
+        margin-left: 100px;
+    }
+
+    #txarea{
+        height : 15em;
+        width : 10em; /* allagh diastasewn ths textarea gia na einai omorfh se mobile syskeyes.*/
+        margin-left: 50px;
+    }
+
+    #subButton{
+        margin-left: 50px;
+        padding : 15px;
+    }
+
+    #undoBut{
+        margin-left: 50px;
+    }
+}
+
+/* Tablet responsive design */
+
+@media only screen and (min-width : 480px) and (max-width : 900px){
+    .navbar{
+        overflow : hidden;
+        background-color: whitesmoke;
+        padding : 75px;
+        border-radius: 25px;
+        margin-left: 75px;
+    }
+
+    .navbar a{
+        border-radius: 25px;
+        display : block;
+        color : red;
+        text-align: left;
+        padding : 20px;
+        text-decoration: none;
+        font-size: 30px;
+        margin-left: -70px;
+    }
+
+    #searchButton{ /* Search button */
+        float : left;
+        color:white;
+        padding : 20px;
+        background-color: black;
+        margin-left: 150px;
+        width : 300px;
+        font-size: x-large;
+        border-radius: 25px;
+    }
+
+    #txarea{
+        margin-left: 50px;
+    }
+
+    #subButton{
+        margin-left: 50px;
+    }
+
+    input[type = text]{
+        display : block;
+        text-align: left;
+        padding : 20px;
+        width : 400px;
+        font-size: large;
+        margin-right : 230px;
+    }
+
+    footer{
+        font-size: larger;
+        margin-left: 100px;
+        color:greenyellow;
+        margin-top: 50px;
+    }
+    
+    ul{
+        margin-left: 100px;
+        font-size: large;
+        color :deepskyblue;
+    }
+
+    #undoBut{
+        margin-left: 50px;
+    }
+}
